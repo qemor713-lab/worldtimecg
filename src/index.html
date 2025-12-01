@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Time Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>⏰ Global Time Tracker</h1>
+    </header>
+    
+    <div id="clock-container">
+        
+        <div class="clock-card local-time" id="local-clock">
+            <h2>Your Local Time 📍</h2>
+            <div class="time-display" id="local-time-display">--:--:--</div>
+            <div class="date-display" id="local-date-display">Loading...</div>
+        </div>
+
+        <div class="clock-card" id="london-clock">
+            <h2>London, UK 🇬🇧</h2>
+            <div class="time-display" data-timezone="Europe/London">--:--:--</div>
+        </div>
+        
+        <div class="clock-card" id="nyc-clock">
+            <h2>New York, USA 🇺🇸</h2>
+            <div class="time-display" data-timezone="America/New_York">--:--:--</div>
+        </div>
+        
+        <div class="clock-card" id="tokyo-clock">
+            <h2>Tokyo, Japan 🇯🇵</h2>
+            <div class="time-display" data-timezone="Asia/Tokyo">--:--:--</div>
+        </div>
+
+        <div class="clock-card" id="sydney-clock">
+            <h2>Sydney, Australia 🇦🇺</h2>
+            <div class="time-display" data-timezone="Australia/Sydney">--:--:--</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
